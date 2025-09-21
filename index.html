@@ -1,20 +1,144 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Portofolio Saya</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Nama Anda</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- Header & Navigasi -->
     <header>
-        <h1>Halo, saya [Nama Anda]</h1>
-        <p>Web Developer & Designer</p>
+        <nav>
+            <div class="logo">Nama Anda</div>
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#skills">Keahlian</a></li>
+                <li><a href="#projects">Proyek</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
     </header>
-    <section>
-        <h2>Tentang Saya</h2>
-        <p>Ini adalah portofolio online saya.</p>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Halo, Saya <span>Nama Anda</span></h1>
+            <p>Web Developer & UI/UX Designer</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn-primary">Lihat Proyek</a>
+                <a href="#contact" class="btn-secondary">Hubungi Saya</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="images/profile.jpg" alt="Profil">
+        </div>
     </section>
+
+    <!-- Tentang Saya -->
+    <section id="about" class="about">
+        <h2>Tentang Saya</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Saya adalah seorang profesional di bidang pengembangan web dan desain antarmuka dengan pengalaman lebih dari 5 tahun. Fokus saya adalah menciptakan solusi digital yang efisien, estetis, dan user-friendly.</p>
+                <p>Saat ini saya bekerja sebagai Full Stack Developer di [Nama Perusahaan], dan menerima proyek freelance untuk website, aplikasi mobile, dan desain UI/UX.</p>
+            </div>
+            <div class="about-image">
+                <img src="images/profile.jpg" alt="Profil">
+            </div>
+        </div>
+    </section>
+
+    <!-- Keahlian -->
+    <section id="skills" class="skills">
+        <h2>Keahlian Saya</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <h3>Frontend</h3>
+                <p>HTML5, CSS3, JavaScript, React, Vue.js</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-server"></i>
+                <h3>Backend</h3>
+                <p>Node.js, Python, PHP, MySQL, MongoDB</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-paint-brush"></i>
+                <h3>UI/UX Design</h3>
+                <p>Figma, Adobe XD, Sketch, Prototyping</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyek -->
+    <section id="projects" class="projects">
+        <h2>Proyek Terbaru</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="images/project1.jpg" alt="Proyek 1">
+                <div class="project-info">
+                    <h3>E-Commerce Platform</h3>
+                    <p>Website e-commerce dengan payment gateway integration</p>
+                    <a href="#" class="btn-primary">Lihat Detail</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images/project2.jpg" alt="Proyek 2">
+                <div class="project-info">
+                    <h3>Mobile Banking App</h3>
+                    <p>Aplikasi mobile untuk transaksi perbankan digital</p>
+                    <a href="#" class="btn-primary">Lihat Detail</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="contact" class="contact">
+        <h2>Hubungi Saya</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>email@domain.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+62 812 3456 7890</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Jakarta, Indonesia</p>
+                </div>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Nama Lengkap" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+                <button type="submit" class="btn-primary">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2023 - Nama Anda</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2023 Nama Anda. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
