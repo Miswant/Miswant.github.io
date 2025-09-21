@@ -35,6 +35,8 @@
     /* Transitions */
     --ts: 200ms ease;
     --ts-lg: 400ms ease;
+    /* Layout */
+    --header-h: 72px;
 }
 
 /* Dark mode tokens */
@@ -176,13 +178,16 @@ nav {
     display: flex;
     align-items: center;
     min-height: 100vh;
-    padding: 0 5%;
+    padding: var(--header-h) 5% 0;
     background: radial-gradient(1200px 600px at 10% 10%, rgba(37,99,235,0.12), transparent 60%),
                 radial-gradient(1000px 500px at 90% 20%, rgba(14,165,233,0.15), transparent 60%),
                 var(--bg);
     position: relative;
     overflow: hidden;
 }
+
+/* Ensure anchor scrolling accounts for fixed header */
+section { scroll-margin-top: calc(var(--header-h) + 12px); }
 .hero-bg-animation {
     position: absolute; inset: -20% -20% auto -20%; height: 60%;
     background: conic-gradient(from 180deg at 50% 50%, rgba(37,99,235,0.25), rgba(14,165,233,0.25), rgba(37,99,235,0.25));
@@ -501,7 +506,7 @@ footer {
     .nav-links {
         position: absolute;
         right: 0;
-        top: 70px;
+        top: var(--header-h);
         background: var(--card);
         width: 100%;
         flex-direction: column;
