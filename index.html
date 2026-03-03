@@ -40,7 +40,7 @@
                 <li><a href="#about">Tentang</a></li>
                 <!-- <li><a href="#experience">Pengalaman</a></li>
                 <li><a href="#skills">Keahlian</a></li> -->
-                <li><a href="#projects">Proyek</a></li>
+                <li><a href="#projects">Portofolio</a></li>
                 <li><a href="#contact">Kontak</a></li>
             </ul>
             <div class="nav-actions">
@@ -66,7 +66,7 @@
                 <h1><span class="typing-text" data-text="Miswanto"></span></h1>
                 <p class="hero-subtitle">
                     <span class="role-text">Full Stack Developer</span> & 
-                    <span class="role-text">UI/UX Designer</span>
+                    <!-- <span class="role-text">UI/UX Designer</span> -->
                     <span class="role-text">Web Developer</span> & 
                     <span class="role-text">Android Developer</span>
                 </p>
@@ -144,10 +144,10 @@
                         dan teknologi yang tepat guna.
                     </p>
                     <div class="about-highlights">
-                        <div class="highlight-item">
+                        <!-- <div class="highlight-item">
                             <i class="fas fa-code"></i>
                             <span>Clean Code Enthusiast</span>
-                        </div>
+                        </div> -->
                         <div class="highlight-item">
                             <i class="fas fa-users"></i>
                             <span>Team Player</span>
@@ -155,6 +155,14 @@
                         <div class="highlight-item">
                             <i class="fas fa-lightbulb"></i>
                             <span>Problem Solver</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fab fa-linux"></i>
+                            <span>Linux Expert</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub Enthusiast</span>
                         </div>
                     </div>
                     <a href="cv-miswanto.pdf" class="btn-download" download>
@@ -370,66 +378,96 @@
     <!-- Proyek -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2>Proyek Unggulan</h2>
+            <h2>Portofolio</h2>
             <div class="projects-filter">
                 <button class="filter-btn active" data-filter="all">Semua</button>
-                <button class="filter-btn" data-filter="web">Web App</button>
-                <button class="filter-btn" data-filter="mobile">Mobile App</button>
-                <button class="filter-btn" data-filter="design">UI/UX Design</button>
+                <button class="filter-btn" data-filter="web">Website</button>
+                <button class="filter-btn" data-filter="android">Android App</button>
+                <!-- <button class="filter-btn" data-filter="design">UI/UX Design</button> -->
             </div>
             <div class="projects-container">
                 <div class="project-card" data-category="web">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="E-Commerce Platform">
+                        <img src="images/portofolio-mbl.png" alt="Company Profile">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="#" class="btn-icon" title="Live Demo" target="_blank" rel="noopener">
+                                <a href="https://mblog.id/" class="btn-icon" title="Live Website" target="_blank" rel="noopener">
                                     <i class="fas fa-external-link-alt"></i>
                                 </a>
-                                <a href="https://github.com/Miswant" class="btn-icon" title="GitHub" target="_blank" rel="noopener">
+                                <!-- <a href="https://github.com/Miswant" class="btn-icon" title="GitHub" target="_blank" rel="noopener">
                                     <i class="fab fa-github"></i>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-category">Website</div>
+                        <h3>Company Profile</h3>
+                        <p>Solusi lengkap untuk company profile profesional dan modern.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Laravel</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="images/portofolio-elang-perkasa.png" alt="E-Commerce Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://elang-perkasa.com/" class="btn-icon" title="Live Website" target="_blank" rel="noopener">
+                                    <i class="fas fa-external-link-alt"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="project-info">
-                        <div class="project-category">Web Application</div>
-                        <h3>E-Commerce, Company Profile & ERP</h3>
-                        <p>Solusi lengkap untuk platform e-commerce modern, company profile profesional, dan sistem ERP terintegrasi dengan fitur pembayaran, manajemen inventori, dan analytics dashboard.</p>
+                        <div class="project-category">Website</div>
+                        <h3>E-Commerce</h3>
+                        <p>Solusi lengkap untuk platform e-commerce modern.</p>
                         <div class="tech-stack">
-                            <span class="tech-tag">React JS</span>
+                            <span class="tech-tag">Laravel</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="images/portofolio-stthbi.png" alt="Sistem Informasi Manajemen Kampus">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://my.stthbi.ac.id/" class="btn-icon" title="Live Website" target="_blank" rel="noopener">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-category">Website</div>
+                        <h3>Sistem Informasi Manajemen Kampus</h3>
+                        <p>Solusi lengkap untuk sistem informasi manajemen kampus modern.</p>
+                        <div class="tech-stack">
                             <span class="tech-tag">Laravel</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card" data-category="mobile">
+                <div class="project-card" data-category="android">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop" alt="Aplikasi Kasir">
+                        <img src="images/portofolio-srk-app.png" alt="Aplikasi Kasir">
                         <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="btn-icon" title="Live Demo" target="_blank" rel="noopener">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <a href="https://github.com/Miswant" class="btn-icon" title="GitHub" target="_blank" rel="noopener">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
                         </div>
                     </div>
                     <div class="project-info">
-                        <div class="project-category">Mobile Application</div>
+                        <div class="project-category">Android App</div>
                         <h3>Aplikasi Kasir</h3>
-                        <p>Aplikasi kasir mobile dengan fitur transaksi real-time, manajemen penjualan, laporan penjualan, dan integrasi pembayaran yang aman dan user-friendly.</p>
+                        <p>Aplikasi kasir mobile dengan fitur transaksi real-time, manajemen penjualan dan user-friendly.</p>
                         <div class="tech-stack">
                             <span class="tech-tag">Flutter</span>
-                            <!-- <span class="tech-tag">Firebase</span> -->
                             <span class="tech-tag">REST API</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card" data-category="design">
+                <!-- <div class="project-card" data-category="design">
                     <div class="project-image">
                         <img src="https://images.unsplash.com/photo-1559028006-448665bd7c7f?w=600&h=400&fit=crop" alt="UI/UX Design Figma">
                         <div class="project-overlay">
@@ -449,34 +487,6 @@
                         <p>Design sistem yang komprehensif menggunakan Figma dengan untuk berbagai platform dan aplikasi.</p>
                         <div class="tech-stack">
                             <span class="tech-tag">Figma</span>
-                            <!-- <span class="tech-tag">Wireframing</span>
-                            <span class="tech-tag">Prototyping</span>
-                            <span class="tech-tag">User Research</span> -->
-                        </div>
-                    </div>
-                </div>
-
-                <!-- <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="Learning Management System">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="btn-icon" title="Live Demo">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <a href="#" class="btn-icon" title="GitHub">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-category">Web Application</div>
-                        <h3>Learning Management System</h3>
-                        <p>Platform pembelajaran online dengan fitur video streaming, quiz interaktif, dan sistem tracking progress siswa.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">React JS</span>
-                            <span class="tech-tag">Laravel</span>
                         </div>
                     </div>
                 </div> -->
@@ -661,7 +671,7 @@
                             <option value="">Pilih subjek</option>
                             <option value="web-development">Web Development</option>
                             <option value="mobile-app">Mobile App</option>
-                            <option value="ui-ux-design">UI/UX Design</option>
+                            <!-- <option value="ui-ux-design">UI/UX Design</option> -->
                             <option value="consultation">Konsultasi</option>
                             <option value="other">Lainnya</option>
                         </select>
@@ -688,7 +698,7 @@
                 <div class="footer-left">
                     <div class="footer-logo">
                         <h3>Miswanto</h3>
-                        <p>Full Stack Developer & UI/UX Designer</p>
+                        <p>Full Stack Developer & Android App Developer</p>
                     </div>
                     <p class="footer-description">
                         Menciptakan pengalaman digital yang luar biasa melalui kombinasi teknologi modern dan desain yang thoughtful.
@@ -702,7 +712,7 @@
                             <li><a href="#home">Beranda</a></li>
                             <li><a href="#about">Tentang</a></li>
                             <!-- <li><a href="#skills">Keahlian</a></li> -->
-                            <li><a href="#projects">Proyek</a></li>
+                            <li><a href="#projects">Portofolio</a></li>
                         </ul>
                     </div>
                     
@@ -710,8 +720,8 @@
                         <h4>Services</h4>
                         <ul>
                             <li><a href="#">Web Development</a></li>
-                            <li><a href="#">Mobile App</a></li>
-                            <li><a href="#">UI/UX Design</a></li>
+                            <li><a href="#">Android App</a></li>
+                            <!-- <li><a href="#">UI/UX Design</a></li> -->
                             <li><a href="#">Consultation</a></li>
                         </ul>
                     </div>
@@ -724,7 +734,7 @@
                     <a href="https://www.instagram.com/mis_1to?igsh=NWh2aWcydDJsa3px" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
                     <a href="https://www.facebook.com/share/1FkagagLwB" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
                 </div>
-                <p>&copy; 2025 Miswanto. All rights reserved. Made with ❤️ in Jakarta</p>
+                <p>&copy; 2025 Miswanto. All rights reserved</p>
             </div>
         </div>
     </footer>
